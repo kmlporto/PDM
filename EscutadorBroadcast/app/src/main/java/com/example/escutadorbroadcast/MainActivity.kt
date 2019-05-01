@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-
 class MainActivity : AppCompatActivity() {
     private lateinit var status: TextView
     private lateinit var receiver: GPSReceiver
@@ -33,4 +32,5 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
         unregisterReceiver(this.receiver)
     }
+
 }
