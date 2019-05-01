@@ -23,6 +23,7 @@ class GPSReceiver : BroadcastReceiver() {
         //val isOn = manager!!.isProviderEnabled(LocationManager.GPS_PROVIDER)
         //if (Context.LOCATION_SERVICE.toBoolean()){
         //    Toast.makeText(context, "GPS ligado", Toast.LENGTH_LONG)
+        if(intent.action == Intent.ACTION_LOCALE_CHANGED){
             Toast.makeText(context, "GPS ligado", Toast.LENGTH_LONG)
         }else{
             Toast.makeText(context, "nada aconteceu", Toast.LENGTH_LONG)
