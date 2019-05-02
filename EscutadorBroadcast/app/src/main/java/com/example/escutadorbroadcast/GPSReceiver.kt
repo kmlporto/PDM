@@ -10,8 +10,6 @@ import android.widget.Toast
 class GPSReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
-        //var manager: LocationManager = context?.getSystemService(Context.LOCATION_SERVICE) as LocationManager
-        //val isGPSEnabled = manager.isProviderEnabled(LocationManager.GPS_PROVIDER)
 
         if (intent.action == LocationManager.PROVIDERS_CHANGED_ACTION) {
             Toast.makeText(context, "GPS ligado", Toast.LENGTH_SHORT).show()
