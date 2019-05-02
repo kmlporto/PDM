@@ -14,10 +14,10 @@ class GPSReceiver : BroadcastReceiver() {
         //val isGPSEnabled = manager.isProviderEnabled(LocationManager.GPS_PROVIDER)
 
         if (intent.action == LocationManager.PROVIDERS_CHANGED_ACTION) {
-            Toast.makeText(context, "GPS ligado", Toast.LENGTH_LONG)
+            Toast.makeText(context, "GPS ligado", Toast.LENGTH_SHORT).show()
             Log.i("APP_GPS", "foi")
         } else {
-            Toast.makeText(context, "nada aconteceu", Toast.LENGTH_LONG)
+            Toast.makeText(context, "nada aconteceu", Toast.LENGTH_SHORT).show()
             Log.i("APP_GPS", "nada")
         }
 
